@@ -1,0 +1,18 @@
+<!ELEMENT course (dayofWeek*, period)>
+<!ATTLIST course
+	courseNum (4620|4650|4660|4770|4850|4910)
+	>
+	
+<!ELEMENT dayOfWeek (#PCDATA)
+<!ATTLIST dayOfWeek
+	day (1|2|3|4|5)
+	>
+	
+<!ELEMENT period (room, instructor)>
+<!ATTLIST period
+	time (830|930|1030|1130|1230|1330|1430|1530|1630)
+	>
+	
+<!ELEMENT room (#PCDATA)>
+
+<!ELEMENT instructor (#PCDATA)>

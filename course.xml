@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE course SYSTEM "lab7.dtd">
+
+<course courseNum="4650">
+	<dayOfWeek day="1">Monday</dayOfWeek>
+	<timeSlot period="1030">
+		<room>SE12 306</room>
+		<instructor>Medhat Elmasry</instructor>
+	</timeSlot>	
+</course>
+	
