@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE period_perspective SYSTEM "Schedule.dtd">
+
+<period_perspective>
+    <period_view time="1130">
+        <course>ACIT4650Lab</course>
+        <dayOfWeek day="1"></dayOfWeek>
+        <room>SE12-306</room>
+        <instructor>Dargahi, Farnaz</instructor>
+        
+	<course>ACIT4910Lab</course>
+        <dayOfWeek day="4"></dayOfWeek>
+        <room>SE12-306</room>
+        <instructor>Richard Chau</instructor>
+        
+        <course>ACIT4770T</course>       
+        <dayOfWeek day="5"></dayOfWeek>
+        <room>SE12-306</room>
+        <instructor>Trevor Lord</instructor>
+        
+    </period_view>
+</period_perspective>

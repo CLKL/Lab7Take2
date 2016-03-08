@@ -1,0 +1,32 @@
+<!ELEMENT schedule (course_perspective, period_perspective, day_perspective)+>
+
+<!-- Course Perspective -->
+
+<!ELEMENT course_perspective (course_view)+>
+<!ELEMENT course_view (dayOfWeek, period, room, instructor)+>
+<!ATTLIST course_view course_num (4620|4650|4660|4770|4850|4910) #REQUIRED>
+
+<!-- Period Perspective -->
+<!ELEMENT period_perspective (period_view)+>
+<!ELEMENT period_view (course, dayOfWeek, room, instructor)+>
+<!ATTLIST period_view time (830|930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED>
+
+<!-- DayOfWeek Perspective -->
+<!ELEMENT day_perspective (day_view)+>
+<!ELEMENT day_view (period, course, room, instructor)+>
+<!ATTLIST day_view day (1|2|3|4|5) #REQUIRED>
+
+<!-- ELEMENTS -->
+<!ELEMENT course (#PCDATA)>
+
+<!ELEMENT dayOfWeek (#PCDATA)>
+<!ATTLIST dayOfWeek day (1|2|3|4|5) #REQUIRED>
+	
+<!ELEMENT period (#PCDATA)>
+<!ATTLIST period
+	time (830|930|1030|1130|1230|1330|1430|1530|1630)
+	#REQUIRED >
+		
+<!ELEMENT room (#PCDATA)>
+
+<!ELEMENT instructor (#PCDATA)>
