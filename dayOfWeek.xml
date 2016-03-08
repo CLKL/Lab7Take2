@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE day_perspective SYSTEM "Schedule.dtd">
 
 <!--
     Document   : dayOfWeek.xml
     Created on : March 07, 2016, 9:00 PM
     Author     : Kelly Liu
 -->
-<d_dayOfWeek day="4">
-    <d_period time="930"></d_period>
-    <d_course>ACIT4910</d_course>
-    <d_instructor>Richard Chau</d_instructor>
-    <d_room>SW5-1850</d_room>		
+<day_perspective>
+    <day_view day="4">
+        <period time="930"></period>
+        <course>ACIT4910</course>
+        <room>SW5-1850</room>	
+        <instructor>Richard Chau</instructor>
 	
 
-    <d_period time="1030"></d_period>
-    <d_course>ACIT4910</d_course>
-    <d_instructor>Richard Chau</d_instructor>
-    <d_room>SE12-306</d_room>	
+        <period time="1030"></period>
+        <course>ACIT4910</course>
+        <room>SE12-306</room>
+        <instructor>Richard Chau</instructor>
 
-    <d_period time="1130"></d_period>
-    <d_course>ACIT4910</d_course>
-    <d_instructor>Richard Chau</d_instructor>
-    <d_room>SE12-306</d_room>		
-
-    <d_period time="1330"></d_period>
-    <d_course>ACIT4850</d_course>
-    <d_instructor>James Parry</d_instructor>
-    <d_room>SE12-308</d_room>
-		
-
-
-    <d_period time="1430"></d_period>
-    <d_course>ACIT4850</d_course>
-    <d_instructor>James Parry</d_instructor>
-    <d_room>SE12-308</d_room>
-		
-</d_dayOfWeek>
+        <period time="1130"></period>
+        <course>ACIT4910</course>
+        <room>SE12-306</room>
+        <instructor>Richard Chau</instructor>
+                
+        <period time="1330"></period>
+        <course>ACIT4850</course>
+        <room>SE12-308</room>
+        <instructor>James Parry</instructor>
+                
+        <period time="1430"></period>
+        <course>ACIT4850</course>
+        <room>SE12-308</room>
+        <instructor>James Parry</instructor>
+    </day_view>
+</day_perspective>

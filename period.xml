@@ -1,15 +1,22 @@
-<?xml version="1.0" standalone="yes" ?>
-<p_period time="1130">
-	<p_dayOfWeek day="1"></p_dayOfWeek>
-	<p_course>ACIT4650Lab</p_course>
-	<p_instructor>Dargahi, Farnaz</p_instructor>
-	<p_room>SE12-306</p_room>
-	<p_dayOfWeek day="4"></p_dayOfWeek>
-	<p_course>ACIT4910Lab</p_course>
-	<p_instructor>Richard Chau</p_instructor>
-	<p_room>SE12-306</p_room>
-	<p_dayOfWeek day="5"></p_dayOfWeek>
-	<p_course>ACIT4770T</p_course>
-	<p_instructor>Trevor Lord</p_instructor>
-	<p_room>SE12-306</p_room>
-</p_period>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE period_perspective SYSTEM "Schedule.dtd">
+
+<period_perspective>
+    <period_view time="1130">
+        <course>ACIT4650Lab</course>
+        <dayOfWeek day="1"></dayOfWeek>
+        <room>SE12-306</room>
+        <instructor>Dargahi, Farnaz</instructor>
+        
+	<course>ACIT4910Lab</course>
+        <dayOfWeek day="4"></dayOfWeek>
+        <room>SE12-306</room>
+        <instructor>Richard Chau</instructor>
+        
+        <course>ACIT4770T</course>       
+        <dayOfWeek day="5"></dayOfWeek>
+        <room>SE12-306</room>
+        <instructor>Trevor Lord</instructor>
+        
+    </period_view>
+</period_perspective>

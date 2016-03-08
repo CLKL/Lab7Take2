@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE course SYSTEM "lab7.dtd">
+<!DOCTYPE course_perspective SYSTEM "Schedule.dtd">
 
-<course courseNum="4650">
-	<dayOfWeek day="1">Monday</dayOfWeek>
-	<timeSlot period="1030">
-		<room>SE12 306</room>
-		<instructor>Medhat Elmasry</instructor>
-	</timeSlot>	
-</course>
-	
+<course_perspective>
+    <course_view course_num="4650">
+    <dayOfWeek day="1">Monday</dayOfWeek>
+    <period time="1030"></period>
+    <room>SE12 306</room>
+    <instructor>Medhat Elmasry</instructor>
+    <dayOfWeek day="1">Monday</dayOfWeek>
+    <period time="1130"></period>
+    <room>SE12 306</room>
+    <instructor>Medhat Elmasry</instructor>
+    <dayOfWeek day="1">Monday</dayOfWeek>
+    <period time="1630"></period>
+    <room>SE6 205</room>
+    <instructor>Medhat Elmasry</instructor>
+    </course_view>
+</course_perspective>
