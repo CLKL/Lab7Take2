@@ -55,10 +55,27 @@ class TimeTable extends CI_Model {
         }
 
        // retrieves php array for bookings from period.xml
-        function getPeriods($code) {
+        function getPeriods() {
             return $this->periods;
         }
 
     }
+  
+}
 
+class booking extends CI_model {
+    public $day = "";
+    public $room = "";
+    public $instructor = "";
+    public $period = "";
+    public $course = "";
+    
+    public function __construct($rec, $par){
+        $this->day = (isset($rec->day['num']) ? $rec->day['num'] : $par['num']);
+        $this->room = $rec->room;
+        $this->instructor = $rec->instructor;
+        $this->period =(isset($rec->day['time']) ? $rec->day['time'] : $par['time']);
+        $this->course =(isset($rec->day['course_num']) ? $rec->day['course_num']
+                : $par['course_num']);
+    }
 }
