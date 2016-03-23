@@ -3,10 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends Application {
 
-    function __construct() {
-        parent::__construct();
-        $this->load->model('timetable');
-    }
 	/**
 	 * Index Page for this controller.
 	 *
@@ -24,13 +20,11 @@ class Welcome extends Application {
 	 */
 	public function index()
 	{
-            $this->load->helper('directory');
-            $candidates = directory_map(DATAPATH);
-            $timetable = DATAPATH . 'timetable.xml';
-            $this->data['timetable'] = $timetable;
-            
-            $this->data['pagebody'] = 'homepage';
+            $this->data['timeslots'] = $this->agenda->periods_dropdown();
+            $this->data['days'] = $this->agenda->days_dropdown();
+            $this->data['pagebody'] = 'welcome';
             $this->render();
 	}
+       
         
 }

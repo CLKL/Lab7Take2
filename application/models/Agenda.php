@@ -60,5 +60,27 @@ class Schedule extends CI_Model {
             return null;
         }
     }
+    
+    function periods_dropdown(){
+                $periods = array();
+		foreach (periods() as $period) {
+			$periods[] = array(
+				'code' => $period->code,
+				'period' => $period->name
+			);
+		}
+		return $periods;
+        }
+        
+    function days_dropdown(){
+                $days = array();
+		foreach (days() as $day) {
+			$days[] = array(
+				'code' => $day->code,
+				'day' => $day->name
+			);
+		}
+		return $days;
+        }
 
 }
